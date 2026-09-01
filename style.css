@@ -1,0 +1,67 @@
+* {
+    /* border: 1px solid red; */
+}
+
+#wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+header {
+    padding: 1rem 0;
+}
+
+header img.logo {
+    display: flex;
+    height: 25px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header .Search {
+    gap: 1rem;
+}
+
+header nav {
+    gap: 1rem;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover {
+    color:red;
+    transition: 0.5s;
+}
+
+header .Search i {
+    cursor: pointer;
+}
+
+.Search input{
+    color: white;
+    background-color: transparent;
+    border-radius: 0.3rem;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+    padding: 0.1rem 0.6rem;
+    
+}
