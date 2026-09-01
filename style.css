@@ -63,5 +63,10 @@ header .Search i {
     border-style: solid;
     outline: none;
     padding: 0.1rem 0.6rem;
-    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap:1rem;
 }
