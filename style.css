@@ -22,7 +22,7 @@ header img.logo {
 body {
     background-color: black;
     color: white;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -41,13 +41,13 @@ header nav {
     justify-content: space-between;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
 header nav a:hover {
-    color:red;
+    color: red;
     transition: 0.5s;
 }
 
@@ -55,7 +55,7 @@ header .Search i {
     cursor: pointer;
 }
 
-.Search input{
+.Search input {
     color: white;
     background-color: transparent;
     border-radius: 0.3rem;
@@ -65,8 +65,126 @@ header .Search i {
     padding: 0.1rem 0.6rem;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
-    row-gap:1rem;
+    row-gap: 1rem;
+}
+
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
+    url('img/bg.jpg') no-repeat center/cover;
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.content button {
+    align-self: flex-start;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: 0.3rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content button:hover{
+    background-color: white;
+    color:black;
+}
+
+.movies .item{
+    width: 32%;
+    position: relative;
+}
+
+.movies .item img{
+    width: 100%;
+    display: block;
+    border-radius: 0.3rem;
+}
+
+.movies .movie-item-info{
+    position: absolute;
+    bottom: 0.8rem;
+    left: 0;
+    right: 0;
+    padding: 0 0.5rem;
+}
+
+.movie-item-info span{
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+}
+
+.movie-item-info a{
+    background-color: red;
+    color: white;
+    padding: 3px 9px;
+    border-radius: 0.3rem;
+    font-size: 0.75rem;
+        transition: 0.3s;
+}
+
+.movie-item-info a:hover{
+    background-color: white;
+    color: black;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-top: 1px solid white;
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+}
+
+footer .about{
+    width: 55%;
+    font-size: 0.8rem;
+}
+
+footer .about nav{
+    gap:1rem;
+    justify-content: flex-start;
+}
+
+footer .about nav a{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+footer .about p {
+    color: #aaa;
+    line-height: 1.4;
+}
+
+footer h4{
+    margin:0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+footer .footer-icons{
+    gap:0.8rem;
+    justify-content: flex-start;
+}
+
+footer .footer-icons img{
+    height: 1.8rem;
+    cursor: pointer;
 }
