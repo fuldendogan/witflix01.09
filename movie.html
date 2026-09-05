@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WitFlix - Titanic İzlə</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./movie.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- 1. Geri Dönüş Butonu -->
+      <header class="d-flex">
+        <a href="index.html" class="back-btn">
+          <i class="fa-solid fa-arrow-left"></i> Ana Sayfaya Dön
+        </a>
+        <img src="img/logo.png" alt="WitFlix Logo" class="logo" />
+      </header>
+
+      <!-- 2. Video Oynatıcı Alanı -->
+      <div class="video-container">
+        <video controls poster="img/bg.jpg">
+          <source src="movie.mp4" type="video/mp4" />
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+      </div>
+
+      <!-- 3. Film Başlığı ve Bilgileri -->
+      <div class="movie-detail">
+        <h1>Titanic (1997)</h1>
+        <p>
+          84 yıl sonra, 100 yaşındaki Rose DeWitt Bukater, torununa RMS Titanic
+          gemisindeki unutulmaz aşk hikayesini anlatıyor...
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -72,8 +72,8 @@ header .Search i {
 }
 
 main {
-    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
-    url('img/bg.jpg') no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('img/bg.jpg') no-repeat center/cover;
     padding: 3rem 2rem;
     border-radius: 0.5rem;
 }
@@ -91,23 +91,23 @@ main {
     transition: 0.3s;
 }
 
-.content button:hover{
+.content button:hover {
     background-color: white;
-    color:black;
+    color: black;
 }
 
-.movies .item{
+.movies .item {
     width: 32%;
     position: relative;
 }
 
-.movies .item img{
+.movies .item img {
     width: 100%;
     display: block;
     border-radius: 0.3rem;
 }
 
-.movies .movie-item-info{
+.movies .movie-item-info {
     position: absolute;
     bottom: 0.8rem;
     left: 0;
@@ -115,28 +115,28 @@ main {
     padding: 0 0.5rem;
 }
 
-.movie-item-info span{
+.movie-item-info span {
     border: 1px solid white;
     border-radius: 4px;
     padding: 2px 6px;
     font-size: 0.75rem;
 }
 
-.movie-item-info a{
+.movie-item-info a {
     background-color: red;
     color: white;
     padding: 3px 9px;
     border-radius: 0.3rem;
     font-size: 0.75rem;
-        transition: 0.3s;
+    transition: 0.3s;
 }
 
-.movie-item-info a:hover{
+.movie-item-info a:hover {
     background-color: white;
     color: black;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -145,23 +145,23 @@ footer{
     border-top: 1px solid white;
 }
 
-.footer-flex{
+.footer-flex {
     display: flex;
     flex-direction: column;
     row-gap: 0.8rem;
 }
 
-footer .about{
+footer .about {
     width: 55%;
     font-size: 0.8rem;
 }
 
-footer .about nav{
-    gap:1rem;
+footer .about nav {
+    gap: 1rem;
     justify-content: flex-start;
 }
 
-footer .about nav a{
+footer .about nav a {
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.5;
@@ -172,19 +172,123 @@ footer .about p {
     line-height: 1.4;
 }
 
-footer h4{
-    margin:0;
+footer h4 {
+    margin: 0;
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.5;
 }
 
-footer .footer-icons{
-    gap:0.8rem;
+footer .footer-icons {
+    gap: 0.8rem;
     justify-content: flex-start;
 }
 
-footer .footer-icons img{
+footer .footer-icons img {
     height: 1.8rem;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #wrapper {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    header {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    header img.logo {
+        order: 1;
+        height: 22px;
+    }
+
+    header .Search {
+        order: 2;
+        gap: 0.8rem;
+    }
+
+    header .Search input {
+        width: 90%;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    header nav {
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: 1px solid rgb(99, 86, 86);
+    }
+
+    main {
+        aspect-ratio: auto;
+        padding: 2rem 1rem;
+    }
+
+    main h1 {
+        font-size: 1.6rem;
+    }
+
+    main p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .content button {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .movies {
+        flex-wrap: wrap;
+        row-gap: 1.2rem;
+    }
+
+    .movies .item {
+        width: 100%;
+    }
+
+    .movies .movie-item-info {
+        bottom: 0.5rem;
+        padding: 0 0.4rem;
+        box-sizing: border-box;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 1.rem 0;
+    }
+
+    footer .about {
+        width: 100%;
+        order: 2;
+    }
+
+    footer .about nav{
+        flex-wrap: wrap;
+    } 
+
+    footer .social-media,
+    footer .apps{
+        width: 45%;
+    }
+
+    footer .logo,
+    footer .footer-icons{
+        display: flex;
+        gap: 0.6rem;
+    }
+
+
+
 }

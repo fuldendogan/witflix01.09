@@ -1,0 +1,60 @@
+/* Geri Dön Butonu */
+.back-btn {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    color: red;
+}
+
+/* Video Kapsayıcısı ve Video Etiketi */
+.video-container {
+    width: 100%;
+    background-color: #111;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+}
+
+/* Film Açıklama Alanı */
+.movie-detail {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.movie-detail h1 {
+    font-size: 1.8rem;
+}
+
+.movie-detail p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* index.html'deki Play Now linkinin buton stili */
+.content .play-btn {
+    align-self: flex-start;
+    background-color: red;
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 0.3rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.content .play-btn:hover {
+    background-color: white;
+    color: black;
+}
